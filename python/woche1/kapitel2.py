@@ -1,7 +1,7 @@
-#Woche-1 / Kapitel 1&2 
+#Woche 1 / Kapitel 1,2 
 #Maximilian Ruess
 
-#--------Leistungsberechnung--------------------
+#--- Leistungsberechnung ---
 
 pi = 3.14159
 drehmoment_nm = 350 #Nm 
@@ -12,7 +12,7 @@ leistung_kW = leistung_w / 1000
 
 print("Leistung:", round(leistung_kW, 1), "kW")
 
-#--------Operatoren und Divisionen-------------
+# --- Operatoren und Divisionen --- 
 
 print(1000/2*5) 
 print(1000/(2*5))
@@ -22,7 +22,7 @@ print (7//2)
 print(7%2) 
 print(10//2)
 
-#-----------Prüfstand------------------
+# --- Prüfstand ---
 
 #Testdauer: 2h 3min 4s -> 7384 s
 
@@ -38,3 +38,18 @@ print(minuten, "min")
 print(restliche_sekunden, "übrige sekunden in s")
 
 print("Testdauer gesamt:", volle_stunden, "h", minuten, "min", restliche_sekunden, "s")
+
+# --- Type Conversions ---
+drehzahl_can = "3000"
+print(int(drehzahl_can) + 500)
+
+temperatur_can = "92.5" 
+print(float(temperatur_can))
+
+print(int(92.5))
+
+# --- Umrechnung mit Input ---
+
+geschwindigkeit_kmh = input('Geschwindigkeit in km/h: ') 
+geschwindigkeit_ms = float(geschwindigkeit_kmh)/3.6
+print('Geschwindigkeit in m/s:', round(geschwindigkeit_ms, 1), 'm/s')
